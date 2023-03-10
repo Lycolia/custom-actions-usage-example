@@ -1,4 +1,4 @@
-name: testing
+name: run example
 on:
   workflow_dispatch:
 jobs:
@@ -11,4 +11,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: show custom actions output
-        run: echo ${{ ${{ steps.test.outputs.RESULT_MESSAGE }} }}
+        run: echo ${{ steps.test.outputs.RESULT_MESSAGE }}
