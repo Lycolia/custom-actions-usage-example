@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: run custom actions
         id: test
-        uses: Lycolia/swc-ts-custom-actions-example@fc8d9b22ff6a5fd26225cfe098f9474176cead4e
+        uses: Lycolia/swc-ts-custom-actions-example@8168506ea445299bfb80a2f3e6d38598f96fd532
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: show custom actions output
